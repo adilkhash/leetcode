@@ -30,8 +30,6 @@ class Solution(object):
         while cur < end:
             if nums[cur] == val and zp is None:
                 zp = cur
-                cur += 1
-                continue
 
             if nums[cur] != val and zp is not None:
                 nums[cur], nums[zp] = nums[zp], nums[cur]

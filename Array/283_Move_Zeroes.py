@@ -24,8 +24,6 @@ class Solution(object):
         while cur <= end:
             if nums[cur] == 0 and zp is None:
                 zp = cur
-                cur += 1
-                continue
 
             if nums[cur] != 0 and zp is not None:
                 nums[cur], nums[zp] = nums[zp], nums[cur]
