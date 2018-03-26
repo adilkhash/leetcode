@@ -22,7 +22,7 @@ class Solution:
         """
         output = []
         for i, el in enumerate(nums):
-            index = abs(abs(el)-1)
+            index = abs(el)-1
             if nums[index] < 0:
                 output.append(abs(el))
             else:
