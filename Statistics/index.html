@@ -25,6 +25,7 @@
                         <th scope="col">Difficulty</th>
                         <th scope="col">Date</th>
                         <th scope="col">Additional info</th>
+                        <th scope="col">Notes</th>
                     </tr>
                 </thead>
 
@@ -41,6 +42,11 @@
                                 <li><a href="https://www.youtube.com/watch?v=uufaK2uLnSI&t=8s">Search element in a circular sorted array</a></li>
                             </ul>
                         </td>
+                        <td>
+                            <p>
+                                При использовании бинарного поиска, одна из частей массива всегда будет отсортирована.
+                            </p>
+                        </td>
                     </tr>
                     <tr>
                         <th scope="row">283</th>
@@ -54,6 +60,7 @@
                                 <li>Asked @ Yandex</li>
                             </ul>
                         </td>
+                        <td></td>
                     </tr>
                     <tr>
                         <th scope="row">238</th>
@@ -63,6 +70,10 @@
                         <td><span class="badge badge-warning">Medium</span></td>
                         <td>25.03.2018</td>
                         <td></td>
+                        <td>
+                            <p>В первом проходе по массиву считаем произведение элементов до i, где i текущий элемент.</p>
+                            <p>Второй проход делаем с конца до начала, где считаем произведение элементов i+1..n, умножаем на посчитанное произведение i-1..0</p>
+                        </td>
                     </tr>
                     <tr>
                         <th scope="row">27</th>
@@ -76,6 +87,7 @@
                                 <li>Asked @ Yandex</li>
                             </ul>
                         </td>
+                        <td></td>
                     </tr>
                     <tr>
                         <th scope="row">268</th>
@@ -89,6 +101,10 @@
                                 <li><a href="https://www.geeksforgeeks.org/find-the-missing-number/">Find the Missing Number - GeeksforGeeks</a></li>
                             </ul>
                         </td>
+                        <td>
+                            <p>Простое решение использует формулу (n * (n+1)) / 2. От результата этой формулы нужно отнять сумму всех элементов в массиве.
+                                Но в случае большого n может быть переполнение, в таком случае можно решить через XOR</p>
+                        </td>
                     </tr>
                     <tr>
                         <th scope="row">35</th>
@@ -99,6 +115,7 @@
                         <td>25.03.2018</td>
                         <td>
                         </td>
+                        <td></td>
                     </tr>
                     <tr>
                         <th scope="row">485</th>
@@ -109,6 +126,7 @@
                         <td>25.03.2018</td>
                         <td>
                         </td>
+                        <td></td>
                     </tr>
                     <tr>
                         <th scope="row">2</th>
@@ -117,8 +135,8 @@
                         <td><a href="https://github.com/adilkhash/leetcode/blob/master/Linked List/2_Add_Two_Numbers.py">2_Add_Two_Numbers.py</a></td>
                         <td><span class="badge badge-warning">Medium</span></td>
                         <td>12.2017</td>
-                        <td>
-                        </td>
+                        <td></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <th scope="row">125</th>
@@ -128,6 +146,27 @@
                         <td><span class="badge badge-success">Easy</span></td>
                         <td>12.2017</td>
                         <td>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">442</th>
+                        <td>Array</td>
+                        <td><a href="https://leetcode.com/problems/find-all-duplicates-in-an-array/description/">Find All Duplicates in an Array</a></td>
+                        <td><a href="https://github.com/adilkhash/leetcode/blob/master/Array/442_Find_All_Duplicates_in_an_Array.py">442_Find_All_Duplicates_in_an_Array.py</a></td>
+                        <td><span class="badge badge-warning">Medium</span></td>
+                        <td>26.03.2018</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    <a href="https://www.youtube.com/watch?v=GeHOlt_QYz8&t=0s&list=PLNmW52ef0uwsjnM06LweaYEZr-wjPKBnj&index=48">Interview Question: Find All Duplicates</a>
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <p>Обратить внимание на то, что элементы принимают значение от 1 <= i <= n, где n размер массива.
+                                Отнимаем от каждого элемента массива 1 и получаем индекс элемента в массиве. Элемент по этому индексу помечаем как отрицательный.
+                                Если наткнулись на дубликат числа, то по посчитанному индексу обнаружим отрицательное число.</p>
                         </td>
                     </tr>
 
